@@ -1,0 +1,1208 @@
+[
+  {
+    "kind": "class",
+    "name": "EventEmitter",
+    "location": {
+      "filename": "file:///C:/repos/intv8/events/src/event_emitter.ts",
+      "line": 17,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Emits events for an `EventManager`.\n\nTODO: Implement EventEmitter class and update documentation."
+    },
+    "classDef": {
+      "isAbstract": false,
+      "constructors": [
+        {
+          "accessibility": null,
+          "hasBody": true,
+          "name": "constructor",
+          "params": [],
+          "location": {
+            "filename": "file:///C:/repos/intv8/events/src/event_emitter.ts",
+            "line": 24,
+            "col": 2
+          }
+        }
+      ],
+      "properties": [
+        {
+          "tsType": {
+            "repr": "EventObserver",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": [
+                {
+                  "repr": "T",
+                  "kind": "typeRef",
+                  "typeRef": {
+                    "typeParams": null,
+                    "typeName": "T"
+                  }
+                }
+              ],
+              "typeName": "EventObserver"
+            }
+          },
+          "readonly": false,
+          "accessibility": "protected",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "observer",
+          "location": {
+            "filename": "file:///C:/repos/intv8/events/src/event_emitter.ts",
+            "line": 19,
+            "col": 2
+          }
+        },
+        {
+          "tsType": {
+            "repr": "boolean",
+            "kind": "keyword",
+            "keyword": "boolean"
+          },
+          "readonly": false,
+          "accessibility": "protected",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "stateOfIsDisposed",
+          "location": {
+            "filename": "file:///C:/repos/intv8/events/src/event_emitter.ts",
+            "line": 21,
+            "col": 2
+          }
+        },
+        {
+          "tsType": {
+            "repr": "boolean",
+            "kind": "keyword",
+            "keyword": "boolean"
+          },
+          "readonly": false,
+          "accessibility": "protected",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "stateOfObserverPeek",
+          "location": {
+            "filename": "file:///C:/repos/intv8/events/src/event_emitter.ts",
+            "line": 23,
+            "col": 2
+          }
+        }
+      ],
+      "indexSignatures": [],
+      "methods": [
+        {
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "peekObserver",
+          "kind": "method",
+          "functionDef": {
+            "params": [],
+            "returnType": {
+              "repr": "EventObserver",
+              "kind": "typeRef",
+              "typeRef": {
+                "typeParams": [
+                  {
+                    "repr": "T",
+                    "kind": "typeRef",
+                    "typeRef": {
+                      "typeParams": null,
+                      "typeName": "T"
+                    }
+                  }
+                ],
+                "typeName": "EventObserver"
+              }
+            },
+            "hasBody": true,
+            "isAsync": false,
+            "isGenerator": false,
+            "typeParams": []
+          },
+          "location": {
+            "filename": "file:///C:/repos/intv8/events/src/event_emitter.ts",
+            "line": 26,
+            "col": 2
+          }
+        },
+        {
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "isDisposed",
+          "kind": "getter",
+          "functionDef": {
+            "params": [],
+            "returnType": {
+              "repr": "boolean",
+              "kind": "keyword",
+              "keyword": "boolean"
+            },
+            "hasBody": true,
+            "isAsync": false,
+            "isGenerator": false,
+            "typeParams": []
+          },
+          "location": {
+            "filename": "file:///C:/repos/intv8/events/src/event_emitter.ts",
+            "line": 36,
+            "col": 2
+          }
+        },
+        {
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "dispose",
+          "kind": "method",
+          "functionDef": {
+            "params": [],
+            "returnType": {
+              "repr": "void",
+              "kind": "keyword",
+              "keyword": "void"
+            },
+            "hasBody": true,
+            "isAsync": false,
+            "isGenerator": false,
+            "typeParams": []
+          },
+          "location": {
+            "filename": "file:///C:/repos/intv8/events/src/event_emitter.ts",
+            "line": 40,
+            "col": 2
+          }
+        },
+        {
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "getEmitterFor",
+          "kind": "method",
+          "functionDef": {
+            "params": [
+              {
+                "kind": "identifier",
+                "name": "event",
+                "optional": false,
+                "tsType": {
+                  "repr": "K",
+                  "kind": "typeRef",
+                  "typeRef": {
+                    "typeParams": null,
+                    "typeName": "K"
+                  }
+                }
+              }
+            ],
+            "returnType": {
+              "repr": "",
+              "kind": "union",
+              "union": [
+                {
+                  "repr": "",
+                  "kind": "indexedAccess",
+                  "indexedAccess": {
+                    "readonly": false,
+                    "objType": {
+                      "repr": "T",
+                      "kind": "typeRef",
+                      "typeRef": {
+                        "typeParams": null,
+                        "typeName": "T"
+                      }
+                    },
+                    "indexType": {
+                      "repr": "K",
+                      "kind": "typeRef",
+                      "typeRef": {
+                        "typeParams": null,
+                        "typeName": "K"
+                      }
+                    }
+                  }
+                },
+                {
+                  "repr": "undefined",
+                  "kind": "keyword",
+                  "keyword": "undefined"
+                }
+              ]
+            },
+            "hasBody": true,
+            "isAsync": false,
+            "isGenerator": false,
+            "typeParams": [
+              {
+                "name": "K",
+                "constraint": {
+                  "repr": "",
+                  "kind": "typeOperator",
+                  "typeOperator": {
+                    "operator": "keyof",
+                    "tsType": {
+                      "repr": "T",
+                      "kind": "typeRef",
+                      "typeRef": {
+                        "typeParams": null,
+                        "typeName": "T"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "location": {
+            "filename": "file:///C:/repos/intv8/events/src/event_emitter.ts",
+            "line": 50,
+            "col": 2
+          }
+        },
+        {
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "emit",
+          "kind": "method",
+          "functionDef": {
+            "params": [
+              {
+                "kind": "identifier",
+                "name": "event",
+                "optional": false,
+                "tsType": {
+                  "repr": "K",
+                  "kind": "typeRef",
+                  "typeRef": {
+                    "typeParams": null,
+                    "typeName": "K"
+                  }
+                }
+              },
+              {
+                "kind": "rest",
+                "arg": {
+                  "kind": "identifier",
+                  "name": "args",
+                  "optional": false,
+                  "tsType": null
+                },
+                "tsType": {
+                  "repr": "Parameters",
+                  "kind": "typeRef",
+                  "typeRef": {
+                    "typeParams": [
+                      {
+                        "repr": "",
+                        "kind": "indexedAccess",
+                        "indexedAccess": {
+                          "readonly": false,
+                          "objType": {
+                            "repr": "T",
+                            "kind": "typeRef",
+                            "typeRef": {
+                              "typeParams": null,
+                              "typeName": "T"
+                            }
+                          },
+                          "indexType": {
+                            "repr": "K",
+                            "kind": "typeRef",
+                            "typeRef": {
+                              "typeParams": null,
+                              "typeName": "K"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "typeName": "Parameters"
+                  }
+                }
+              }
+            ],
+            "returnType": {
+              "repr": "void",
+              "kind": "keyword",
+              "keyword": "void"
+            },
+            "hasBody": true,
+            "isAsync": false,
+            "isGenerator": false,
+            "typeParams": [
+              {
+                "name": "K",
+                "constraint": {
+                  "repr": "",
+                  "kind": "typeOperator",
+                  "typeOperator": {
+                    "operator": "keyof",
+                    "tsType": {
+                      "repr": "T",
+                      "kind": "typeRef",
+                      "typeRef": {
+                        "typeParams": null,
+                        "typeName": "T"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "location": {
+            "filename": "file:///C:/repos/intv8/events/src/event_emitter.ts",
+            "line": 54,
+            "col": 2
+          }
+        }
+      ],
+      "extends": null,
+      "implements": [
+        {
+          "repr": "IDisposable",
+          "kind": "typeRef",
+          "typeRef": {
+            "typeParams": null,
+            "typeName": "IDisposable"
+          }
+        }
+      ],
+      "typeParams": [
+        {
+          "name": "T",
+          "constraint": {
+            "repr": "Record",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": [
+                {
+                  "repr": "string",
+                  "kind": "keyword",
+                  "keyword": "string"
+                },
+                {
+                  "repr": "EventHandler",
+                  "kind": "typeRef",
+                  "typeRef": {
+                    "typeParams": null,
+                    "typeName": "EventHandler"
+                  }
+                }
+              ],
+              "typeName": "Record"
+            }
+          }
+        }
+      ],
+      "superTypeParams": []
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "EventHandler",
+    "location": {
+      "filename": "file:///C:/repos/intv8/events/src/types/types.ts",
+      "line": 12,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "A handler for an event."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "",
+        "kind": "fnOrConstructor",
+        "fnOrConstructor": {
+          "constructor": false,
+          "tsType": {
+            "repr": "void",
+            "kind": "keyword",
+            "keyword": "void"
+          },
+          "params": [
+            {
+              "kind": "rest",
+              "arg": {
+                "kind": "identifier",
+                "name": "args",
+                "optional": false,
+                "tsType": null
+              },
+              "tsType": {
+                "repr": "",
+                "kind": "array",
+                "array": {
+                  "repr": "any",
+                  "kind": "keyword",
+                  "keyword": "any"
+                }
+              }
+            }
+          ],
+          "typeParams": []
+        }
+      },
+      "typeParams": []
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "EventNotification",
+    "location": {
+      "filename": "file:///C:/repos/intv8/events/src/types/types.ts",
+      "line": 31,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "",
+        "kind": "union",
+        "union": [
+          {
+            "repr": "AddEventNotification",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": [
+                {
+                  "repr": "T",
+                  "kind": "typeRef",
+                  "typeRef": {
+                    "typeParams": null,
+                    "typeName": "T"
+                  }
+                }
+              ],
+              "typeName": "AddEventNotification"
+            }
+          },
+          {
+            "repr": "RemoveEventNotification",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": [
+                {
+                  "repr": "T",
+                  "kind": "typeRef",
+                  "typeRef": {
+                    "typeParams": null,
+                    "typeName": "T"
+                  }
+                }
+              ],
+              "typeName": "RemoveEventNotification"
+            }
+          }
+        ]
+      },
+      "typeParams": [
+        {
+          "name": "T",
+          "constraint": {
+            "repr": "Record",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": [
+                {
+                  "repr": "string",
+                  "kind": "keyword",
+                  "keyword": "string"
+                },
+                {
+                  "repr": "EventHandler",
+                  "kind": "typeRef",
+                  "typeRef": {
+                    "typeParams": null,
+                    "typeName": "EventHandler"
+                  }
+                }
+              ],
+              "typeName": "Record"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "kind": "typeAlias",
+    "name": "TEventRegistry",
+    "location": {
+      "filename": "file:///C:/repos/intv8/events/src/types/types.ts",
+      "line": 15,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Describes a collection of available events and their handler signatures."
+    },
+    "typeAliasDef": {
+      "tsType": {
+        "repr": "Map",
+        "kind": "typeRef",
+        "typeRef": {
+          "typeParams": [
+            {
+              "repr": "",
+              "kind": "typeOperator",
+              "typeOperator": {
+                "operator": "keyof",
+                "tsType": {
+                  "repr": "T",
+                  "kind": "typeRef",
+                  "typeRef": {
+                    "typeParams": null,
+                    "typeName": "T"
+                  }
+                }
+              }
+            },
+            {
+              "repr": "",
+              "kind": "array",
+              "array": {
+                "repr": "",
+                "kind": "indexedAccess",
+                "indexedAccess": {
+                  "readonly": false,
+                  "objType": {
+                    "repr": "T",
+                    "kind": "typeRef",
+                    "typeRef": {
+                      "typeParams": null,
+                      "typeName": "T"
+                    }
+                  },
+                  "indexType": {
+                    "repr": "",
+                    "kind": "typeOperator",
+                    "typeOperator": {
+                      "operator": "keyof",
+                      "tsType": {
+                        "repr": "T",
+                        "kind": "typeRef",
+                        "typeRef": {
+                          "typeParams": null,
+                          "typeName": "T"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "typeName": "Map"
+        }
+      },
+      "typeParams": [
+        {
+          "name": "T",
+          "constraint": {
+            "repr": "Record",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": [
+                {
+                  "repr": "string",
+                  "kind": "keyword",
+                  "keyword": "string"
+                },
+                {
+                  "repr": "EventHandler",
+                  "kind": "typeRef",
+                  "typeRef": {
+                    "typeParams": null,
+                    "typeName": "EventHandler"
+                  }
+                }
+              ],
+              "typeName": "Record"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "kind": "class",
+    "name": "EventManager",
+    "location": {
+      "filename": "file:///C:/repos/intv8/events/src/event_manager.ts",
+      "line": 18,
+      "col": 0
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "Manages adding and removing of events.\n\nTODO: Implement EventManager class and update documentation."
+    },
+    "classDef": {
+      "isAbstract": false,
+      "constructors": [
+        {
+          "accessibility": null,
+          "hasBody": true,
+          "name": "constructor",
+          "params": [
+            {
+              "kind": "assign",
+              "left": {
+                "kind": "identifier",
+                "name": "initialEvents",
+                "optional": false,
+                "tsType": {
+                  "repr": "TEventRegistry",
+                  "kind": "typeRef",
+                  "typeRef": {
+                    "typeParams": [
+                      {
+                        "repr": "T",
+                        "kind": "typeRef",
+                        "typeRef": {
+                          "typeParams": null,
+                          "typeName": "T"
+                        }
+                      }
+                    ],
+                    "typeName": "TEventRegistry"
+                  }
+                }
+              },
+              "right": "[UNSUPPORTED]",
+              "tsType": null
+            }
+          ],
+          "location": {
+            "filename": "file:///C:/repos/intv8/events/src/event_manager.ts",
+            "line": 28,
+            "col": 2
+          }
+        }
+      ],
+      "properties": [
+        {
+          "tsType": {
+            "repr": "Events",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": [
+                {
+                  "repr": "T",
+                  "kind": "typeRef",
+                  "typeRef": {
+                    "typeParams": null,
+                    "typeName": "T"
+                  }
+                }
+              ],
+              "typeName": "Events"
+            }
+          },
+          "readonly": false,
+          "accessibility": "protected",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "events",
+          "location": {
+            "filename": "file:///C:/repos/intv8/events/src/event_manager.ts",
+            "line": 20,
+            "col": 2
+          }
+        },
+        {
+          "tsType": {
+            "repr": "TEventRegistry",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": [
+                {
+                  "repr": "T",
+                  "kind": "typeRef",
+                  "typeRef": {
+                    "typeParams": null,
+                    "typeName": "T"
+                  }
+                }
+              ],
+              "typeName": "TEventRegistry"
+            }
+          },
+          "readonly": false,
+          "accessibility": "protected",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "stateOfEvents",
+          "location": {
+            "filename": "file:///C:/repos/intv8/events/src/event_manager.ts",
+            "line": 22,
+            "col": 2
+          }
+        },
+        {
+          "tsType": {
+            "repr": "EventEmitter",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": [
+                {
+                  "repr": "T",
+                  "kind": "typeRef",
+                  "typeRef": {
+                    "typeParams": null,
+                    "typeName": "T"
+                  }
+                }
+              ],
+              "typeName": "EventEmitter"
+            }
+          },
+          "readonly": false,
+          "accessibility": "protected",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "emitter",
+          "location": {
+            "filename": "file:///C:/repos/intv8/events/src/event_manager.ts",
+            "line": 24,
+            "col": 2
+          }
+        },
+        {
+          "tsType": {
+            "repr": "boolean",
+            "kind": "keyword",
+            "keyword": "boolean"
+          },
+          "readonly": false,
+          "accessibility": "protected",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "stateOfEmitter",
+          "location": {
+            "filename": "file:///C:/repos/intv8/events/src/event_manager.ts",
+            "line": 26,
+            "col": 2
+          }
+        }
+      ],
+      "indexSignatures": [],
+      "methods": [
+        {
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "getEventEmitter",
+          "kind": "method",
+          "functionDef": {
+            "params": [],
+            "returnType": {
+              "repr": "EventEmitter",
+              "kind": "typeRef",
+              "typeRef": {
+                "typeParams": [
+                  {
+                    "repr": "T",
+                    "kind": "typeRef",
+                    "typeRef": {
+                      "typeParams": null,
+                      "typeName": "T"
+                    }
+                  }
+                ],
+                "typeName": "EventEmitter"
+              }
+            },
+            "hasBody": true,
+            "isAsync": false,
+            "isGenerator": false,
+            "typeParams": []
+          },
+          "location": {
+            "filename": "file:///C:/repos/intv8/events/src/event_manager.ts",
+            "line": 43,
+            "col": 2
+          }
+        },
+        {
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "addEventHandler",
+          "kind": "method",
+          "functionDef": {
+            "params": [
+              {
+                "kind": "identifier",
+                "name": "event",
+                "optional": false,
+                "tsType": {
+                  "repr": "K",
+                  "kind": "typeRef",
+                  "typeRef": {
+                    "typeParams": null,
+                    "typeName": "K"
+                  }
+                }
+              },
+              {
+                "kind": "identifier",
+                "name": "handler",
+                "optional": false,
+                "tsType": {
+                  "repr": "",
+                  "kind": "indexedAccess",
+                  "indexedAccess": {
+                    "readonly": false,
+                    "objType": {
+                      "repr": "T",
+                      "kind": "typeRef",
+                      "typeRef": {
+                        "typeParams": null,
+                        "typeName": "T"
+                      }
+                    },
+                    "indexType": {
+                      "repr": "K",
+                      "kind": "typeRef",
+                      "typeRef": {
+                        "typeParams": null,
+                        "typeName": "K"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "returnType": {
+              "repr": "void",
+              "kind": "keyword",
+              "keyword": "void"
+            },
+            "hasBody": true,
+            "isAsync": false,
+            "isGenerator": false,
+            "typeParams": [
+              {
+                "name": "K",
+                "constraint": {
+                  "repr": "",
+                  "kind": "typeOperator",
+                  "typeOperator": {
+                    "operator": "keyof",
+                    "tsType": {
+                      "repr": "T",
+                      "kind": "typeRef",
+                      "typeRef": {
+                        "typeParams": null,
+                        "typeName": "T"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "location": {
+            "filename": "file:///C:/repos/intv8/events/src/event_manager.ts",
+            "line": 53,
+            "col": 2
+          }
+        },
+        {
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "removeEventHandler",
+          "kind": "method",
+          "functionDef": {
+            "params": [
+              {
+                "kind": "identifier",
+                "name": "event",
+                "optional": false,
+                "tsType": {
+                  "repr": "K",
+                  "kind": "typeRef",
+                  "typeRef": {
+                    "typeParams": null,
+                    "typeName": "K"
+                  }
+                }
+              },
+              {
+                "kind": "identifier",
+                "name": "handler",
+                "optional": false,
+                "tsType": {
+                  "repr": "",
+                  "kind": "indexedAccess",
+                  "indexedAccess": {
+                    "readonly": false,
+                    "objType": {
+                      "repr": "T",
+                      "kind": "typeRef",
+                      "typeRef": {
+                        "typeParams": null,
+                        "typeName": "T"
+                      }
+                    },
+                    "indexType": {
+                      "repr": "K",
+                      "kind": "typeRef",
+                      "typeRef": {
+                        "typeParams": null,
+                        "typeName": "K"
+                      }
+                    }
+                  }
+                }
+              }
+            ],
+            "returnType": {
+              "repr": "void",
+              "kind": "keyword",
+              "keyword": "void"
+            },
+            "hasBody": true,
+            "isAsync": false,
+            "isGenerator": false,
+            "typeParams": [
+              {
+                "name": "K",
+                "constraint": {
+                  "repr": "",
+                  "kind": "typeOperator",
+                  "typeOperator": {
+                    "operator": "keyof",
+                    "tsType": {
+                      "repr": "T",
+                      "kind": "typeRef",
+                      "typeRef": {
+                        "typeParams": null,
+                        "typeName": "T"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "location": {
+            "filename": "file:///C:/repos/intv8/events/src/event_manager.ts",
+            "line": 74,
+            "col": 2
+          }
+        },
+        {
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "removeAllEventHandlers",
+          "kind": "method",
+          "functionDef": {
+            "params": [
+              {
+                "kind": "identifier",
+                "name": "event",
+                "optional": false,
+                "tsType": {
+                  "repr": "K",
+                  "kind": "typeRef",
+                  "typeRef": {
+                    "typeParams": null,
+                    "typeName": "K"
+                  }
+                }
+              }
+            ],
+            "returnType": {
+              "repr": "void",
+              "kind": "keyword",
+              "keyword": "void"
+            },
+            "hasBody": true,
+            "isAsync": false,
+            "isGenerator": false,
+            "typeParams": [
+              {
+                "name": "K",
+                "constraint": {
+                  "repr": "",
+                  "kind": "typeOperator",
+                  "typeOperator": {
+                    "operator": "keyof",
+                    "tsType": {
+                      "repr": "T",
+                      "kind": "typeRef",
+                      "typeRef": {
+                        "typeParams": null,
+                        "typeName": "T"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "location": {
+            "filename": "file:///C:/repos/intv8/events/src/event_manager.ts",
+            "line": 92,
+            "col": 2
+          }
+        },
+        {
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "clear",
+          "kind": "method",
+          "functionDef": {
+            "params": [],
+            "returnType": {
+              "repr": "void",
+              "kind": "keyword",
+              "keyword": "void"
+            },
+            "hasBody": true,
+            "isAsync": false,
+            "isGenerator": false,
+            "typeParams": []
+          },
+          "location": {
+            "filename": "file:///C:/repos/intv8/events/src/event_manager.ts",
+            "line": 105,
+            "col": 2
+          }
+        },
+        {
+          "accessibility": "public",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "isDisposed",
+          "kind": "getter",
+          "functionDef": {
+            "params": [],
+            "returnType": {
+              "repr": "boolean",
+              "kind": "keyword",
+              "keyword": "boolean"
+            },
+            "hasBody": true,
+            "isAsync": false,
+            "isGenerator": false,
+            "typeParams": []
+          },
+          "location": {
+            "filename": "file:///C:/repos/intv8/events/src/event_manager.ts",
+            "line": 111,
+            "col": 2
+          }
+        },
+        {
+          "accessibility": "protected",
+          "optional": false,
+          "isAbstract": false,
+          "isStatic": false,
+          "name": "onDispose",
+          "kind": "method",
+          "functionDef": {
+            "params": [],
+            "returnType": {
+              "repr": "void",
+              "kind": "keyword",
+              "keyword": "void"
+            },
+            "hasBody": true,
+            "isAsync": false,
+            "isGenerator": false,
+            "typeParams": []
+          },
+          "location": {
+            "filename": "file:///C:/repos/intv8/events/src/event_manager.ts",
+            "line": 116,
+            "col": 2
+          }
+        }
+      ],
+      "extends": "AbstractDisposable",
+      "implements": [],
+      "typeParams": [
+        {
+          "name": "T",
+          "constraint": {
+            "repr": "Record",
+            "kind": "typeRef",
+            "typeRef": {
+              "typeParams": [
+                {
+                  "repr": "string",
+                  "kind": "keyword",
+                  "keyword": "string"
+                },
+                {
+                  "repr": "EventHandler",
+                  "kind": "typeRef",
+                  "typeRef": {
+                    "typeParams": null,
+                    "typeName": "EventHandler"
+                  }
+                }
+              ],
+              "typeName": "Record"
+            }
+          }
+        }
+      ],
+      "superTypeParams": []
+    }
+  },
+  {
+    "kind": "variable",
+    "name": "VERSION",
+    "location": {
+      "filename": "file:///C:/repos/intv8/events/src/version.ts",
+      "line": 9,
+      "col": 13
+    },
+    "declarationKind": "export",
+    "jsDoc": {
+      "doc": "The current release version of the intv8 events package."
+    },
+    "variableDef": {
+      "tsType": {
+        "repr": "0.0.1",
+        "kind": "literal",
+        "literal": {
+          "kind": "string",
+          "string": "0.0.1"
+        }
+      },
+      "kind": "const"
+    }
+  }
+]
